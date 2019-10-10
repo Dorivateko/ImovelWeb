@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+//rotas da tabela corretores
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/corretores','CorretorController@index') ->name ('corretores.index');
