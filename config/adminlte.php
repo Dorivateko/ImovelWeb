@@ -132,6 +132,7 @@ return [
                 [
                     'text' => 'Listar Proprietários',
                     'icon' => 'fas fa-fw fa-bars',
+                    'route' => 'proprietarios.index',
                 ],
                 [
                     'text' => 'Incluir Proprietário',
@@ -147,6 +148,7 @@ return [
                 [
                     'text' => 'Listar Imóveis',
                     'icon' => 'fas fa-fw fa-bars',
+                    'route' => 'imoveis.index',
                 ],
                 [
                     'text' => 'Incluir Imóvel',
@@ -162,6 +164,7 @@ return [
                 [
                     'text' => 'Listar Aluguéis',
                     'icon' => 'fas fa-fw fa-bars',
+                    'route' => 'alugueis.index',
                 ],
                 [
                     'text' => 'Incluir Aluguel',

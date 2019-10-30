@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 //rotas da tabela corretores
 
 Route::get('/corretores','CorretorController@index') ->name ('corretores.index');
+Route::get('/proprietarios','ProprietariosController@index') ->name ('proprietarios.index');
+Route::get('/imoveis','ImoveisController@index') ->name ('imoveis.index');
+Route::get('/alugueis','AlugueisController@index') ->name ('alugueis.index');

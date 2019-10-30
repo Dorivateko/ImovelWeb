@@ -2,21 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Corretor;
+use App\Alugueis;
 use Illuminate\Http\Request;
 
-class CorretorController extends Controller
+class AlugueisController extends Controller
 {
-/*
-*index - exibir uma relação de registro na "tela"
-*create - exibir um formulario html para ser slicitado dados ao usuario
-*store - recebe da dos do formulariao via crate e envia para o bd
-*show - exibir uma pagina com os dados de um determinado registro
-*edit - exibe um formulario com os dados de um determinado registro
-*update - recebe os dados do formulario via edit e atualiza no bd
-*destroy - exclui um determinado registro do bd
-*/ 
-
     /**
      * Display a listing of the resource.
      *
@@ -24,8 +14,8 @@ class CorretorController extends Controller
      */
     public function index()
     {
-        $corretores = Corretor::all();
-        return view('corretores.index',compact('corretores'));
+        $alugueis = Alugueis::all();
+        return view('alugueis.index',$alugueis);
     }
 
     /**
@@ -52,10 +42,10 @@ class CorretorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Alugueis  $alugueis
      * @return \Illuminate\Http\Response
      */
-    public function show(Corretor $corretor)
+    public function show(Alugueis $alugueis)
     {
         //
     }
@@ -63,10 +53,10 @@ class CorretorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Alugueis  $alugueis
      * @return \Illuminate\Http\Response
      */
-    public function edit(Corretor $corretor)
+    public function edit(Alugueis $alugueis)
     {
         //
     }
@@ -75,10 +65,10 @@ class CorretorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Alugueis  $alugueis
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Corretor $corretor)
+    public function update(Request $request, Alugueis $alugueis)
     {
         //
     }
@@ -86,10 +76,10 @@ class CorretorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Alugueis  $alugueis
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Corretor $corretor)
+    public function destroy(Alugueis $alugueis)
     {
         //
     }

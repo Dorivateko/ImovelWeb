@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Corretor;
+use App\Proprietarios;
 use Illuminate\Http\Request;
 
-class CorretorController extends Controller
+class ProprietariosController extends Controller
 {
 /*
 *index - exibir uma relação de registro na "tela"
@@ -24,8 +24,8 @@ class CorretorController extends Controller
      */
     public function index()
     {
-        $corretores = Corretor::all();
-        return view('corretores.index',compact('corretores'));
+        $proprietarios = Proprietarios::all();
+        return view('proprietarios.index',$proprietarios);
     }
 
     /**
@@ -52,10 +52,10 @@ class CorretorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Prorietarios  $prorietarios
      * @return \Illuminate\Http\Response
      */
-    public function show(Corretor $corretor)
+    public function show(Prorietarios $prorietarios)
     {
         //
     }
@@ -63,10 +63,10 @@ class CorretorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Prorietarios  $prorietarios
      * @return \Illuminate\Http\Response
      */
-    public function edit(Corretor $corretor)
+    public function edit(Prorietarios $prorietarios)
     {
         //
     }
@@ -75,10 +75,10 @@ class CorretorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Prorietarios  $prorietarios
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Corretor $corretor)
+    public function update(Request $request, Prorietarios $prorietarios)
     {
         //
     }
@@ -86,10 +86,10 @@ class CorretorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Corretor  $corretor
+     * @param  \App\Prorietarios  $prorietarios
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Corretor $corretor)
+    public function destroy(Prorietarios $prorietarios)
     {
         //
     }
