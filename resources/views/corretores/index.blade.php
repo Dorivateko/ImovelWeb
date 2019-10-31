@@ -12,7 +12,7 @@
             Relação de corretores cadastrados
                 <div class="pull-right">
                     <a href="#" class="btn btn-info"><i class="fa fa-fx fa-sync-alt"></i> atualizar a tela</a>
-                    <a href="#" class="btn btn-success"><i class="fas fa-fx fa-plus"></i> Incluir novo registro</a>
+                    <a href="{{route('corretores.create')}}" class="btn btn-success"><i class="fas fa-fx fa-plus"></i> Incluir novo registro</a>
                 </div>   
         
             </div>
@@ -33,7 +33,7 @@
                         @foreach($corretores as $corretor)
                         <tr> 
                             <td>{{ $corretor->id }}</td>
-                            <td>{{ $corretor-> nome }}</td>
+                            <td>{{ $corretor->nome }}</td>
                             <td>{{ $corretor->fone }}</td>
                             <td>{{ $corretor->email }}</td>
                             <td>

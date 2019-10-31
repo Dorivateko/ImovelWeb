@@ -21,7 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //rotas da tabela corretores
 
-Route::get('/corretores','CorretorController@index') ->name ('corretores.index');
-Route::get('/proprietarios','ProprietariosController@index') ->name ('proprietarios.index');
-Route::get('/imoveis','ImoveisController@index') ->name ('imoveis.index');
-Route::get('/alugueis','AlugueisController@index') ->name ('alugueis.index');
+//Route::get('/corretores','CorretorController@index') ->name ('corretores.index');
+//Route::get('/proprietarios','ProprietariosController@index') ->name ('proprietarios.index');
+//Route::get('/imoveis','ImoveisController@index') ->name ('imoveis.index');
+//Route::get('/alugueis','AlugueisController@index') ->name ('alugueis.index');
+route::resource('corretores','CorretorController');
+route::resource('proprietarios','ProprietariosController');
+route::resource('imoveis','ImoveisController');
+route::resource('alugueis','AlugueisController');
